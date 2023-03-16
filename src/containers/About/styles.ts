@@ -39,7 +39,8 @@ export const Item = styled.li`
 export const ListSocial = styled.ul`
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
+  padding-left: 16px;
   gap: 30px;
   margin-top: 36px;
 

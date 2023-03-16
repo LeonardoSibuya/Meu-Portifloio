@@ -6,22 +6,22 @@ const Nav = () => (
       <Item>Leonardo</Item>
       <ListaItens>
         <Item>
-          <Link href="">About Me</Link>
+          <Link href="#about">About Me</Link>
         </Item>
         <Item>
-          <Link href="">Skills</Link>
+          <Link href="#skill">Skills</Link>
         </Item>
         <Item>
-          <Link href="">Experience</Link>
+          <Link href="#experience">Experience</Link>
         </Item>
         <Item>
-          <Link href="">Projects</Link>
+          <Link href="#project">Projects</Link>
         </Item>
         <Item>
-          <Link href="">Contact</Link>
+          <Link href="#contact">Contact</Link>
         </Item>
         <Item>
-          <LinkExterno href="">Contact Me</LinkExterno>
+          <LinkExterno href="tel:11974537646">Contact Me</LinkExterno>
         </Item>
       </ListaItens>
     </Lista>

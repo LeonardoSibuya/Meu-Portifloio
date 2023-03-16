@@ -18,7 +18,7 @@ import Linkedin from '../../images/icons/linkedin.png'
 import Github from '../../images/icons/github.png'
 
 const About = () => (
-  <Sobre>
+  <Sobre id="about">
     <Container>
       <ContainerAbout>
         <ImagePerfil src={FotoPerfil} />
@@ -57,17 +57,29 @@ const About = () => (
           </Infos>
           <ListSocial>
             <li>
-              <a href="">
+              <a
+                href="https://www.instagram.com/leleo.sb/"
+                target={'_blank'}
+                rel="noreferrer"
+              >
                 <img src={Instagram} alt="" />
               </a>
             </li>
             <li>
-              <a href="">
+              <a
+                href="https://www.linkedin.com/in/leonardo-sibuya-25221015b/"
+                target={'_blank'}
+                rel="noreferrer"
+              >
                 <img src={Linkedin} alt="" />
               </a>
             </li>
             <li>
-              <a href="">
+              <a
+                href="https://github.com/LeonardoSibuya"
+                target={'_blank'}
+                rel="noreferrer"
+              >
                 <img src={Github} alt="" />
               </a>
             </li>
