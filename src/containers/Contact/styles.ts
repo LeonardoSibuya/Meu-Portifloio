@@ -1,7 +1,11 @@
 import styled from 'styled-components'
 
 export const ContentContact = styled.div`
-  background-image: linear-gradient(to right, #09203f, #2c5779);
+  background-image: linear-gradient(
+    to right,
+    ${(props) => props.theme.corPrincipal},
+    ${(props) => props.theme.corSecundaria}
+  );
   padding: 80px 0 0;
 `
 
@@ -14,6 +18,10 @@ export const ListImg = styled.ul`
   align-items: center;
   justify-content: center;
   gap: 4px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `
 
 export const ItemImg = styled.li`
@@ -24,8 +32,16 @@ export const ItemImg = styled.li`
   flex-direction: column;
   align-items: center;
 
+  @media (max-width: 768px) {
+    padding: 6px;
+  }
+
   img {
     max-width: 80px;
+
+    @media (max-width: 768px) {
+      max-width: 60px;
+    }
   }
 
   a {
@@ -34,6 +50,10 @@ export const ItemImg = styled.li`
     font-size: 14px;
     text-decoration: none;
     padding: 16px 0 0;
+
+    @media (max-width: 768px) {
+      font-size: 12px;
+    }
 
     :hover {
       text-decoration: underline;
@@ -46,4 +66,9 @@ export const FotoAvatar = styled.img`
   width: 100%;
   margin-top: 24px;
   margin-bottom: -6px;
+
+  @media (max-width: 768px) {
+    max-width: 140px;
+    height: 180px;
+  }
 `

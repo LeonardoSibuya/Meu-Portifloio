@@ -14,7 +14,16 @@ export const Pilula = styled.div<PropsPill>`
   justify-content: center;
   gap: 16px;
 
+  @media (max-width: 768px) {
+    width: 200px;
+    font-size: 12px;
+  }
+
   img {
     max-width: 24px;
+
+    @media (max-width: 768px) {
+      max-width: 18px;
+    }
   }
 `

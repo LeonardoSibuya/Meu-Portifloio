@@ -1,7 +1,11 @@
 import styled from 'styled-components'
 
 export const Content = styled.div`
-  background-image: linear-gradient(to right, #09203f, #2c5779);
+  background-image: linear-gradient(
+    to right,
+    ${(props) => props.theme.corPrincipal},
+    ${(props) => props.theme.corSecundaria}
+  );
   padding: 80px 0;
 `
 
@@ -10,10 +14,22 @@ export const Info = styled.div`
   align-items: start;
   justify-content: center;
 
+  @media (max-width: 768px) {
+    display: block;
+  }
+
   img {
     max-width: 460px;
     border-radius: 8px;
     height: 480px;
+
+    @media (max-width: 768px) {
+      max-width: 240px;
+      height: 240px;
+      margin: 0 auto;
+      margin-bottom: 16px;
+      display: block;
+    }
   }
 `
 

@@ -1,7 +1,11 @@
 import styled from 'styled-components'
 
 export const ContentProjects = styled.div`
-  background-image: linear-gradient(to right, #040f1d, #2c5779);
+  background-image: linear-gradient(
+    to right,
+    ${(props) => props.theme.corTercearia},
+    ${(props) => props.theme.corSecundaria}
+  );
   padding: 80px 0;
 `
 
@@ -11,6 +15,11 @@ export const ListProjects = styled.ul`
   gap: 40px;
   max-width: 1024px;
   width: 100%;
+
+  @media (max-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 `
 
 export const ItemProject = styled.li`
@@ -19,6 +28,10 @@ export const ItemProject = styled.li`
   img {
     max-width: 100%;
     border-radius: 8px;
+
+    @media (max-width: 768px) {
+      margin-bottom: 12px;
+    }
   }
 `
 export const ListButtons = styled.ul`

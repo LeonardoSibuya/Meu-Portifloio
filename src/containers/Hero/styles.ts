@@ -10,6 +10,27 @@ export const Header = styled.div`
   padding-bottom: 32px;
 `
 
+export const TituloPrincipal = styled.h1`
+  font-size: 32px;
+  color: #fff;
+  font-weight: bold;
+
+  @media (max-width: 768px) {
+    font-size: 24px;
+  }
+`
+
+export const SubtituloPrincipal = styled.h2`
+  font-size: 24px;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 12px;
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
+`
+
 export const Content = styled.div`
   text-align: center;
 `
@@ -31,6 +52,11 @@ export const Botao = styled.button`
   align-itens: center;
   justify-content: space-around;
 
+  @media (max-width: 768px) {
+    padding: 4px;
+    width: 80px;
+  }
+
   :hover {
     background-color: #9191f4;
   }
@@ -38,5 +64,9 @@ export const Botao = styled.button`
   img {
     max-width: 30px;
     width: 100%;
+
+    @media (max-width: 768px) {
+      max-width: 24px;
+    }
   }
 `

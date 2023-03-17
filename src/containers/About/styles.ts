@@ -1,19 +1,32 @@
 import styled from 'styled-components'
 
 export const Sobre = styled.div`
-  background-image: linear-gradient(to right, #09203f, #2c5779);
+  background-image: linear-gradient(
+    to right,
+    ${(props) => props.theme.corPrincipal},
+    ${(props) => props.theme.corSecundaria}
+  );
   padding: 80px 0;
 `
 export const ContainerAbout = styled.div`
   display: flex;
   justify-content: center;
   align-items: start;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `
 
 export const ImagePerfil = styled.img`
   max-width: 460px;
   width: 100%;
   padding-right: 36px;
+
+  @media (max-width: 768px) {
+    max-width: 340px;
+    margin-bottom: 16px;
+  }
 `
 
 export const Infos = styled.ul`
@@ -25,9 +38,13 @@ export const Infos = styled.ul`
   padding-left: 26px;
   border: 1px solid #d40b0b;
   border-radius: 26px;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
 `
 export const Item = styled.li`
-  color: #fff;
+  color: ${(props) => props.theme.corLetra};
   font-size: 12px;
 
   b {
@@ -43,6 +60,10 @@ export const ListSocial = styled.ul`
   padding-left: 16px;
   gap: 30px;
   margin-top: 36px;
+
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
 
   li {
     img {

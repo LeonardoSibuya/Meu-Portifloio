@@ -6,6 +6,29 @@ export const Lista = styled.ul`
   justify-content: space-around;
   padding: 16px 0;
   background-color: #010309;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0 0 10px 1px;
+
+  @media (max-width: 768px) {
+    padding: 8px 0;
+    padding-left: 16px;
+    justify-content: left;
+  }
+
+  button {
+    display: none;
+
+    @media (max-width: 768px) {
+      display: block;
+      color: #fff;
+      background-color: #4e4ef2;
+      border: none;
+      border-radius: 6px;
+      padding: 2px 4px;
+      margin: 8px 0;
+    }
+  }
 `
 export const Item = styled.li`
   color: #fff;
@@ -13,6 +36,23 @@ export const Item = styled.li`
   font-size: 14px;
   padding: 0 8px;
   position: relative;
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+    padding: 6px 0;
+  }
+`
+
+export const ItemNome = styled.li`
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 0 8px;
+  position: relative;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `
 
 export const Link = styled.a`
@@ -65,6 +105,18 @@ export const LinkExterno = styled.a`
   }
 `
 
+export const ListaItensContent = styled.ul<{ isOpen: boolean }>`
+  display: flex;
+
+  @media (max-width: 768px) {
+    display: ${({ isOpen }) => (isOpen ? 'block' : 'none')};
+  }
+`
+
 export const ListaItens = styled.ul`
   display: flex;
+
+  @media (max-width: 768px) {
+    display: block;
+  }
 `
