@@ -13,6 +13,7 @@ export const Info = styled.div`
   img {
     max-width: 460px;
     border-radius: 8px;
+    height: 480px;
   }
 `
 

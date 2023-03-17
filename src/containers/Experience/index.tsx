@@ -20,16 +20,38 @@ const Experience = () => (
         <TextDiv>
           <Subtitulo>Hostel & Pousada Bahia Beach</Subtitulo>
           <Paragrafo>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio
-            possimus, illum sapiente sit quod saepe quasi officia maxime, et
-            totam doloribus hic quo aliquam sunt temporibus nihil accusamus
-            ipsa. Veniam!Lorem, ipsum dolor sit amet consectetur adipisicing
-            elit. Odio elit. Odio elit. Odio elit. Odio elit. Odio possimus,
-            illum sapiente sit quod saepe quasi maxime, et maxime, et maxime, et
-            totam doloribus hic quo temporibus nihil ipsa. Veniam!Lorem, ipsum
-            dolor sit amet consectetur adipisicing elit. Odio possimus, illum
-            sapiente sit quod saepe quasi officia maxime, et totam doloribus hic
-            quo aliquam
+            Este projeto foi desenvolvido para um hostel e pousada, localizado
+            em Itanhaém - SP, e esta empresa utilizava apenas o Instagram e
+            Facebook como plataforma de conteúdo sobre o local e divulgação para
+            seus clientes.
+          </Paragrafo>
+          <br />
+          <Paragrafo>
+            O objetivo do projeto foi desenvolver um layout atraente e
+            profissional, e dar mais a credibilidade para pousada, aumentando a
+            taxa de reservas.
+          </Paragrafo>
+          <br />
+          <Paragrafo>
+            Este projeto traz como solução para a empresa, mais uma forma de
+            divulgação para atrair mais hóspedes, e também mais credibilidade no
+            momento do contato com o cliente, onde em algumas situações o
+            cliente poderia ficar desconfiado no momento de sua reserva via
+            WhatsApp, e encaminhando para o mesmo o site da pousada, mostra mais
+            profissionalismo desta empresa.
+          </Paragrafo>
+          <br />
+          <Paragrafo>
+            Desde o início, fui responsável por todo o processo de criação do
+            site, desde a concepção do design até a implementação final.
+            Utilizei minhas habilidades em HTML, CSS e JavaScript para criar um
+            site totalmente responsivo e fácil de navegar.
+          </Paragrafo>
+          <br />
+          <Paragrafo>
+            Para melhorar ainda mais o desenvolvimento, usei ferramentas como
+            SASS e Gulp para agilizar e minificar o processo de criação, e
+            também algumas estruturas do Bootstrap.
           </Paragrafo>
           <Link
             href="https://pousada-bahia-beach.vercel.app/"

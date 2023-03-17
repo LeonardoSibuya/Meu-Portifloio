@@ -48,6 +48,11 @@ export const ListSocial = styled.ul`
     img {
       max-width: 28px;
       width: 100%;
+      transition: 0.2s ease;
+
+      :hover {
+        width: 26px;
+      }
     }
   }
 `

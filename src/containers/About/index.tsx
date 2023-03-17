@@ -12,7 +12,7 @@ import {
   ListSocial
 } from './styles'
 
-import FotoPerfil from '../../images/emoji-semfundo.png'
+import FotoAvatar from '../../images/emoji-semfundo-2.png'
 import Instagram from '../../images/icons/Instagram.png'
 import Linkedin from '../../images/icons/linkedin.png'
 import Github from '../../images/icons/github.png'
@@ -21,22 +21,30 @@ const About = () => (
   <Sobre id="about">
     <Container>
       <ContainerAbout>
-        <ImagePerfil src={FotoPerfil} />
+        <ImagePerfil src={FotoAvatar} />
         <div>
           <Titulo>About Me</Titulo>
           <Line />
           <Paragrafo>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
-            doloribus temporibus quibusdam molestias quis, repellat nesciunt, et
-            maxime nobis modi optio reiciendis, eligendi cupiditate praesentium.
-            Rem optio nemo explicabo dolore. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Nostrum itaque doloremque eos officia
-            quasi necessitatibus distinctio! Quis quos nisi maxime perferendis!
-            Est totam odit iure enim doloribus quidem blanditiis quos!Lorem
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
-            fugit rem! Dolores saepe maiores animi ipsa in odit, autem fugiat.
-            Velit animi aperiam consectetur asperiores dolorum ducimus cum at
-            saepe.
+            Olá, meu nome é Leonardo Sibuya, sou desenvolvedor front-end web.
+            Sou apaixonado por tecnologia, e decidi ingressar na área de
+            programação, com muito foco e comprometimento. Atualmente, estou em
+            busca de oportunidades para trabalhar em projetos desafiadores que
+            possam me ajudar a crescer e desenvolver ainda mais minhas
+            habilidades como desenvolvedor front-end. Estou animado para
+            compartilhar meu trabalho e colaborar com outros profissionais de
+            tecnologia.
+          </Paragrafo>
+          <br />
+          <Paragrafo>
+            Sou estudante de Desenvolvimento Full stack Python na EBAC - Escola
+            Escola Escola Britânica de Artes Criativas e Tecnologia, e tenho
+            objetivo ingressar e crescer no mercado de programação, e tenho como
+            qualidades, disciplina e foco para alcançar minhas metas.
+          </Paragrafo>
+          <br />
+          <Paragrafo>
+            Obrigado por visitar o meu portfólio e por considerar meu trabalho!
           </Paragrafo>
           <Infos>
             <Item>

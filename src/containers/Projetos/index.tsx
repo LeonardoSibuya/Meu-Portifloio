@@ -12,7 +12,10 @@ import {
   Visit
 } from './styles'
 
-import Pousada from '../../images/projects/pousada-freelance.png'
+import Financy from '../../images/projects/financy.png'
+import Spider from '../../images/projects/spider.png'
+import CloneDisney from '../../images/projects/clone-disney.png'
+import Portfólio from '../../images/projects/portfólio.png'
 
 const Projetos = () => (
   <ContentProjects id="project">
@@ -21,21 +24,26 @@ const Projetos = () => (
       <Line />
       <ListProjects>
         <ItemProject>
-          <Subtitulo>Titulo</Subtitulo>
-          <img src={Pousada} alt="" />
+          <Subtitulo>FinancY</Subtitulo>
+          <img src={Financy} alt="capa site de finanças" />
           <Paragrafo>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-            consequatur magni, at eius minima repellendus voluptatibus amet
-            voluptate veniam, eveniet cum
+            Projeto idealizado para simular uma plataforma de investimentos,
+            onde teria planos de assinatura para o usuário. Utilizei API para
+            mostrar ao usuário a cotação atual máxima e mínima do dólar em real,
+            um FAQ de perguntas frequentes, e um formulário simulando uma
+            Newsletter.
           </Paragrafo>
           <ListButtons>
             <li>
-              <Visit href="" target={'_blank'}>
+              <Visit href="https://financy-one.vercel.app/" target={'_blank'}>
                 Visitar
               </Visit>
             </li>
             <li>
-              <Code href="" target={'_blank'}>
+              <Code
+                href="https://github.com/LeonardoSibuya/financy"
+                target={'_blank'}
+              >
                 Ver código
               </Code>
             </li>
@@ -43,21 +51,29 @@ const Projetos = () => (
         </ItemProject>
 
         <ItemProject>
-          <Subtitulo>Titulo</Subtitulo>
-          <img src={Pousada} alt="" />
+          <Subtitulo>Spiderverse</Subtitulo>
+          <img src={Spider} alt="capa site homem aranha" />
           <Paragrafo>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-            consequatur magni, at eius minima repellendus voluptatibus amet
-            voluptate veniam, eveniet cum
+            Este projeto é uma Landing Page para o filme Spider-Man
+            Spider-Verse, feito para divulgação do filme, e para informações
+            como sinopse, elenco, onde assistir e preço do streaming. E criei a
+            seção de wallpaper, para salvar aquela aquela aquela imagem legal do
+            filme.
           </Paragrafo>
           <ListButtons>
             <li>
-              <Visit href="" target={'_blank'}>
+              <Visit
+                href="https://spiderverse-leonardo-sibuya.vercel.app/"
+                target={'_blank'}
+              >
                 Visitar
               </Visit>
             </li>
             <li>
-              <Code href="" target={'_blank'}>
+              <Code
+                href="https://github.com/LeonardoSibuya/spiderverse"
+                target={'_blank'}
+              >
                 Ver código
               </Code>
             </li>
@@ -65,21 +81,29 @@ const Projetos = () => (
         </ItemProject>
 
         <ItemProject>
-          <Subtitulo>Titulo</Subtitulo>
-          <img src={Pousada} alt="" />
+          <Subtitulo>Clone Disney Plus</Subtitulo>
+          <img src={CloneDisney} alt="" />
           <Paragrafo>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-            consequatur magni, at eius minima repellendus voluptatibus amet
-            voluptate veniam, eveniet cum
+            Este projeto é um clone da Landing Page da Disney Plus, criado para
+            aprimorar minhas habilidades com HTML, CSS e JavaScript, onde foi
+            desenvolvido durante meu aprendizado no curso da EBAC, desta forma
+            acrescentou muito em meus conhecimentos e técnicas de
+            desenvolvimento.
           </Paragrafo>
           <ListButtons>
             <li>
-              <Visit href="" target={'_blank'}>
+              <Visit
+                href="https://ls-clone-disneyplus.vercel.app/"
+                target={'_blank'}
+              >
                 Visitar
               </Visit>
             </li>
             <li>
-              <Code href="" target={'_blank'}>
+              <Code
+                href="https://github.com/LeonardoSibuya/clone_disneyplus"
+                target={'_blank'}
+              >
                 Ver código
               </Code>
             </li>
@@ -87,21 +111,26 @@ const Projetos = () => (
         </ItemProject>
 
         <ItemProject>
-          <Subtitulo>Titulo</Subtitulo>
-          <img src={Pousada} alt="" />
+          <Subtitulo>Portfólio</Subtitulo>
+          <img src={Portfólio} alt="" />
           <Paragrafo>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
-            consequatur magni, at eius minima repellendus voluptatibus amet
-            voluptate veniam, eveniet cum
+            Aqui adicionei este mesmo Portfólio, para compartilhar o acesso ao
+            código de desenvolvimento deste projeto, onde foi criado utilizando
+            React, Typescript e styled-components, utilizados também em muitos
+            projetos atualmente no mercado de tecnologia. No botão visitar, você
+            poderá conferir também outros projetos em meu GitHub.
           </Paragrafo>
           <ListButtons>
             <li>
-              <Visit href="" target={'_blank'}>
+              <Visit href="https://github.com/LeonardoSibuya" target={'_blank'}>
                 Visitar
               </Visit>
             </li>
             <li>
-              <Code href="" target={'_blank'}>
+              <Code
+                href="https://github.com/LeonardoSibuya/Meu-Portifloio"
+                target={'_blank'}
+              >
                 Ver código
               </Code>
             </li>
