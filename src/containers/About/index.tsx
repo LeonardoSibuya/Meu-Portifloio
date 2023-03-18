@@ -38,9 +38,9 @@ const About = () => (
           <br />
           <Paragrafo>
             Sou estudante de Desenvolvimento Full stack Python na EBAC - Escola
-            Britânica de Artes Criativas e Tecnologia, e tenho objetivo de
-            ingressar e crescer no mercado de programação, e tenho como
-            qualidades disciplina e foco para alcançar minhas metas.
+            Britânica de Artes Criativas e Tecnologia, e tenho como objetivo
+            ingressar e crescer no mercado de programação, destaco minhas
+            qualidades como disciplina e foco para alcançar as minhas metas.
           </Paragrafo>
           <br />
           <Paragrafo>

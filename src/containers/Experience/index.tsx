@@ -28,12 +28,12 @@ const Experience = () => (
           <br />
           <Paragrafo>
             O objetivo do projeto foi desenvolver um layout atraente e
-            profissional, e dar mais credibilidade para pousada, aumentando a
+            profissional, e dar mais credibilidade para a pousada, aumentando a
             taxa de reservas.
           </Paragrafo>
           <br />
           <Paragrafo>
-            Este projeto traz como solução para a empresa, mais uma forma de
+            Este projeto traz como solução para a empresa mais uma forma de
             divulgação para atrair mais hóspedes, e também mais credibilidade no
             momento do contato com o cliente, onde em algumas situações o
             cliente poderia ficar desconfiado no momento de sua reserva via
