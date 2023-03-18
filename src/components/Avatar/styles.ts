@@ -7,6 +7,11 @@ export const FotoPerfil = styled.img`
   margin-top: 16px;
   margin-bottom: 14px;
 
+  @media (max-width: 1024px) {
+    width: 150px;
+    height: 164px;
+  }
+
   @media (max-width: 768px) {
     width: 130px;
     height: 140px;

@@ -14,6 +14,10 @@ export const TecItens = styled.ul`
   gap: 16px;
   padding-bottom: 38px;
 
+  @media (max-width: 1024px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
   @media (max-width: 768px) {
     display: flex;
     flex-direction: column;

@@ -5,6 +5,10 @@ export const Title = styled.h2`
   color: ${(props) => props.theme.corLetra};
   font-weight: bold;
 
+  @media (max-width: 1024px) {
+    font-size: 28px;
+  }
+
   @media (max-width: 768px) {
     font-size: 24px;
   }

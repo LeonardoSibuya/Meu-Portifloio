@@ -28,7 +28,7 @@ const Experience = () => (
           <br />
           <Paragrafo>
             O objetivo do projeto foi desenvolver um layout atraente e
-            profissional, e dar mais a credibilidade para pousada, aumentando a
+            profissional, e dar mais credibilidade para pousada, aumentando a
             taxa de reservas.
           </Paragrafo>
           <br />

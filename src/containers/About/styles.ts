@@ -13,6 +13,10 @@ export const ContainerAbout = styled.div`
   justify-content: center;
   align-items: start;
 
+  @media (max-width: 1024px) {
+    flex-direction: column;
+  }
+
   @media (max-width: 768px) {
     flex-direction: column;
   }
@@ -22,6 +26,13 @@ export const ImagePerfil = styled.img`
   max-width: 460px;
   width: 100%;
   padding-right: 36px;
+
+  @media (max-width: 1024px) {
+    max-width: 420px;
+    height: 400px;
+    margin: 0 auto;
+    margin-bottom: 24px;
+  }
 
   @media (max-width: 768px) {
     max-width: 340px;
@@ -61,6 +72,10 @@ export const ListSocial = styled.ul`
   padding-left: 16px;
   gap: 30px;
   margin-top: 36px;
+
+  @media (max-width: 1024px) {
+    justify-content: center;
+  }
 
   @media (max-width: 768px) {
     justify-content: center;

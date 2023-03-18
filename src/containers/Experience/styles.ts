@@ -14,6 +14,11 @@ export const Info = styled.div`
   align-items: start;
   justify-content: center;
 
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    align-items: center;
+  }
+
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: center;
@@ -23,6 +28,14 @@ export const Info = styled.div`
     max-width: 460px;
     border-radius: 8px;
     height: 480px;
+
+    @media (max-width: 1024px) {
+      max-width: 100%;
+      height: 340px;
+      margin: 0 auto;
+      margin-bottom: 16px;
+      display: block;
+    }
 
     @media (max-width: 768px) {
       max-width: 100%;

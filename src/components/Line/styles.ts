@@ -6,6 +6,10 @@ export const Linha = styled.div`
   border: 1px solid #d40b0b;
   margin-bottom: 16px;
 
+  @media (max-width: 1024px) {
+    width: 100px;
+  }
+
   @media (max-width: 768px) {
     width: 80px;
   }

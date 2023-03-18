@@ -16,6 +16,11 @@ export const ListProjects = styled.ul`
   max-width: 1024px;
   width: 100%;
 
+  @media (max-width: 1024px) {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
   @media (max-width: 768px) {
     display: grid;
     grid-template-columns: 1fr;

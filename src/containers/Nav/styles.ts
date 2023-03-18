@@ -10,6 +10,12 @@ export const Lista = styled.ul`
   width: 100%;
   box-shadow: 0 0 10px 1px;
 
+  @media (max-width: 1024px) {
+    padding: 8px 0;
+    padding-left: 16px;
+    justify-content: left;
+  }
+
   @media (max-width: 768px) {
     padding: 8px 0;
     padding-left: 16px;
@@ -18,6 +24,17 @@ export const Lista = styled.ul`
 
   button {
     display: none;
+
+    @media (max-width: 1024px) {
+      display: block;
+      color: #fff;
+      background-color: transparent;
+      border: none;
+      border-radius: 6px;
+      padding: 2px 4px;
+      margin: 8px 0;
+      font-size: 24px;
+    }
 
     @media (max-width: 768px) {
       display: block;
@@ -38,6 +55,11 @@ export const Item = styled.li`
   padding: 0 8px;
   position: relative;
 
+  @media (max-width: 1024px) {
+    font-size: 14px;
+    padding: 6px 0;
+  }
+
   @media (max-width: 768px) {
     font-size: 12px;
     padding: 6px 0;
@@ -50,6 +72,10 @@ export const ItemNome = styled.li`
   font-size: 14px;
   padding: 0 8px;
   position: relative;
+
+  @media (max-width: 1024px) {
+    display: none;
+  }
 
   @media (max-width: 768px) {
     display: none;
@@ -109,6 +135,10 @@ export const LinkExterno = styled.a`
 export const ListaItensContent = styled.ul<{ isOpen: boolean }>`
   display: flex;
 
+  @media (max-width: 1024px) {
+    display: ${({ isOpen }) => (isOpen ? 'block' : 'none')};
+  }
+
   @media (max-width: 768px) {
     display: ${({ isOpen }) => (isOpen ? 'block' : 'none')};
   }
@@ -116,6 +146,10 @@ export const ListaItensContent = styled.ul<{ isOpen: boolean }>`
 
 export const ListaItens = styled.ul`
   display: flex;
+
+  @media (max-width: 1024px) {
+    display: block;
+  }
 
   @media (max-width: 768px) {
     display: block;

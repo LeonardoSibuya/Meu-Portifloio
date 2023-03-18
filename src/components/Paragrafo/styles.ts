@@ -6,6 +6,10 @@ export const P = styled.p`
   line-height: 16px;
   font-weight: normal;
 
+  @media (max-width: 1024px) {
+    font-size: 13px;
+  }
+
   @media (max-width: 768px) {
     font-size: 12px;
   }
