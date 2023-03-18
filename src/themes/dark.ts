@@ -1,7 +1,7 @@
 const temaDark = {
-  corPrincipal: '#09203f',
-  corSecundaria: '#2c5779',
-  corTercearia: '#040f1d',
+  corPrincipal: '#02060f',
+  corSecundaria: '#113149',
+  corTercearia: '#000209',
   corLetra: '#fff'
 }
 

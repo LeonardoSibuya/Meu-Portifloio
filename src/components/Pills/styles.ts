@@ -17,6 +17,7 @@ export const Pilula = styled.div<PropsPill>`
   @media (max-width: 768px) {
     width: 200px;
     font-size: 12px;
+    gap: 12px;
   }
 
   img {

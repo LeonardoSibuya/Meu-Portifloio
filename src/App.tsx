@@ -22,7 +22,7 @@ function App() {
   }
 
   return (
-    <ThemeProvider theme={estaUsandoTemaLight ? temaDark : temaLight}>
+    <ThemeProvider theme={estaUsandoTemaLight ? temaLight : temaDark}>
       <EstiloGlobal />
       <Nav />
       <Hero trocaTema={trocaTema} />

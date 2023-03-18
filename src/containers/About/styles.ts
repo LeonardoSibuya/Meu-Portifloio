@@ -25,6 +25,7 @@ export const ImagePerfil = styled.img`
 
   @media (max-width: 768px) {
     max-width: 340px;
+    height: 300px;
     margin-bottom: 16px;
   }
 `

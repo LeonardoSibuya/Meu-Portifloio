@@ -22,11 +22,12 @@ export const Lista = styled.ul`
     @media (max-width: 768px) {
       display: block;
       color: #fff;
-      background-color: #4e4ef2;
+      background-color: transparent;
       border: none;
       border-radius: 6px;
       padding: 2px 4px;
       margin: 8px 0;
+      font-size: 24px;
     }
   }
 `

@@ -9,9 +9,6 @@ import {
   TituloPrincipal
 } from './styles'
 
-import Lua from '../../images/moon.png'
-import Sol from '../../images/sun.png'
-
 type PropsTema = {
   trocaTema: () => void
 }
@@ -24,10 +21,7 @@ const Hero = (props: PropsTema) => (
       <SubtituloPrincipal>Front-end Developer</SubtituloPrincipal>
     </Content>
     <DivBotao>
-      <Botao onClick={props.trocaTema}>
-        <img src={Lua} alt="" />
-        <img src={Sol} alt="" />
-      </Botao>
+      <Botao onClick={props.trocaTema}>Change Theme</Botao>
     </DivBotao>
   </Header>
 )
