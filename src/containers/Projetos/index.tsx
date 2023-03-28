@@ -16,6 +16,7 @@ import Financy from '../../images/projects/financy.png'
 import Spider from '../../images/projects/spider.png'
 import CloneDisney from '../../images/projects/clone-disney.png'
 import Portfólio from '../../images/projects/portfólio.png'
+import lista from '../../images/projects/todo-list.png'
 
 const Projetos = () => (
   <ContentProjects id="project">
@@ -111,24 +112,27 @@ const Projetos = () => (
         </ItemProject>
 
         <ItemProject>
-          <Subtitulo>Portfólio</Subtitulo>
-          <img src={Portfólio} alt="" />
+          <Subtitulo>To Do List</Subtitulo>
+          <img src={lista} alt="" />
           <Paragrafo>
-            Aqui adicionei este mesmo Portfólio, para compartilhar o acesso ao
-            código de desenvolvimento deste projeto, onde foi criado utilizando
-            React, Typescript e styled-components, utilizados também em muitos
-            projetos atualmente no mercado de tecnologia. No botão visitar, você
-            poderá conferir também outros projetos em meu GitHub.
+            Este projeto desenvolvido junto da EBAC, é uma lista To Do List. Foi
+            programada utilizando React, TypeScript, Styled-components e Redux.
+            Possui diversas funcionalidades excelentes para novos projetos e
+            para o mercado de trabalho, e acrescentou muito em minhas
+            habilidades técnicas e organizacional.
           </Paragrafo>
           <ListButtons>
             <li>
-              <Visit href="https://github.com/LeonardoSibuya" target={'_blank'}>
+              <Visit
+                href="https://minhas-tarefas-ebac.vercel.app/"
+                target={'_blank'}
+              >
                 Visitar
               </Visit>
             </li>
             <li>
               <Code
-                href="https://github.com/LeonardoSibuya/Meu-Portifloio"
+                href="https://github.com/LeonardoSibuya/minhas-tarefas-Ebac"
                 target={'_blank'}
               >
                 Ver código

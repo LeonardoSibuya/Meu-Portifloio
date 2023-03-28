@@ -18,6 +18,7 @@ import vue from '../../images/icons/vuejs.svg'
 import jquery from '../../images/icons/jquery.svg'
 import styledc from '../../images/icons/sc.png'
 
+import Redux from '../../images/icons/redux.png'
 import Gulp from '../../images/icons/gulp.svg'
 import Less from '../../images/icons/less.svg'
 import sass from '../../images/icons/sass.svg'
@@ -57,6 +58,7 @@ const Skill = () => (
       </TecItens>
       <Subtitulo>Other Tecnologies</Subtitulo>
       <TecItens>
+        <Pill bgColor={'bb96f7'} image={Redux} child={'Redux'}></Pill>
         <Pill bgColor={'772222'} image={Gulp} child={'Gulp'}></Pill>
         <Pill bgColor={'0480CC'} image={Less} child={'Less'}></Pill>
         <Pill bgColor={'F56EB1'} image={sass} child={'SASS'}></Pill>
