@@ -6,18 +6,22 @@ import Titulo from '../../components/Title'
 import { Container } from '../../style'
 import { TecItens, Tecnologies } from './styles'
 
+//IMAGES:
+//Languages
 import Html from '../../images/icons/html5.svg'
 import Css from '../../images/icons/css3.svg'
 import JS from '../../images/icons/javascript.svg'
 import TS from '../../images/icons/typescript.svg'
 import Py from '../../images/icons/python.svg'
 
+//Frameworks & Libs
 import bootstrap from '../../images/icons/bootstrap.svg'
 import react from '../../images/icons/react.svg'
 import vue from '../../images/icons/vuejs.svg'
 import jquery from '../../images/icons/jquery.svg'
 import styledc from '../../images/icons/sc.png'
 
+//Other Tecnologies
 import Redux from '../../images/icons/redux.png'
 import Gulp from '../../images/icons/gulp.svg'
 import Less from '../../images/icons/less.svg'
@@ -30,6 +34,7 @@ import grunt from '../../images/icons/grunt.svg'
 import es from '../../images/icons/es6.png'
 import parcel from '../../images/icons/parcel.png'
 import ajax from '../../images/icons/ajax.jpg'
+import coding from '../../images/icons/coding.jpg'
 
 const Skill = () => (
   <Tecnologies id="skill">
@@ -70,6 +75,7 @@ const Skill = () => (
         <Pill bgColor={'af9d33'} image={es} child={'ES6'}></Pill>
         <Pill bgColor={'21374B'} image={parcel} child={'Parcel'}></Pill>
         <Pill bgColor={'126799'} image={ajax} child={'AJAX'}></Pill>
+        <Pill bgColor={'2B2E34'} image={coding} child={'Tests'}></Pill>
       </TecItens>
     </Container>
   </Tecnologies>
