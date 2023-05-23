@@ -28,6 +28,7 @@ export const Info = styled.div`
     max-width: 460px;
     border-radius: 8px;
     height: 480px;
+    box-shadow: 1px 2px 4px 0px;
 
     @media (max-width: 1024px) {
       max-width: 100%;

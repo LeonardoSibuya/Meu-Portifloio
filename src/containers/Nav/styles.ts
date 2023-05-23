@@ -9,6 +9,7 @@ export const Lista = styled.ul`
   position: fixed;
   width: 100%;
   box-shadow: 0 0 10px 1px;
+  z-index: 1;
 
   @media (max-width: 1024px) {
     padding: 8px 0;

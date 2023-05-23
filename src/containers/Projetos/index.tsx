@@ -1,3 +1,5 @@
+import { useState } from 'react'
+
 import Titulo from '../../components/Title'
 import Subtitulo from '../../components/Subtitle'
 import Paragrafo from '../../components/Paragrafo'
@@ -9,140 +11,150 @@ import {
   ItemProject,
   ListButtons,
   ListProjects,
-  Visit
+  Visit,
+  Modal,
+  ModalContent,
+  ImageClose,
+  ImgProject,
+  Action
 } from './styles'
 
 import Financy from '../../images/projects/financy.png'
-import Spider from '../../images/projects/spider.png'
+import ecommerce from '../../images/projects/Eplay.png'
 import CloneDisney from '../../images/projects/clone-disney.png'
-import Portfólio from '../../images/projects/portfólio.png'
 import lista from '../../images/projects/todo-list.png'
 
-const Projetos = () => (
-  <ContentProjects id="project">
-    <Container>
-      <Titulo>Projects</Titulo>
-      <Line />
-      <ListProjects>
-        <ItemProject>
-          <Subtitulo>FinancY</Subtitulo>
-          <img src={Financy} alt="capa site de finanças" />
-          <Paragrafo>
-            Projeto idealizado para simular uma plataforma de investimentos,
-            onde teria planos de assinatura para o usuário. Utilizei API para
-            mostrar ao usuário a cotação atual máxima e mínima do dólar em real,
-            um FAQ de perguntas frequentes, e um formulário simulando uma
-            Newsletter.
-          </Paragrafo>
-          <ListButtons>
-            <li>
-              <Visit href="https://financy-one.vercel.app/" target={'_blank'}>
-                Visitar
-              </Visit>
-            </li>
-            <li>
-              <Code
-                href="https://github.com/LeonardoSibuya/financy"
-                target={'_blank'}
-              >
-                Ver código
-              </Code>
-            </li>
-          </ListButtons>
-        </ItemProject>
+import fechar from '../../images/icons/fechar.png'
+import zoom from '../../images/icons/zoom.png'
 
-        <ItemProject>
-          <Subtitulo>Spiderverse</Subtitulo>
-          <img src={Spider} alt="capa site homem aranha" />
-          <Paragrafo>
-            Este projeto é uma Landing Page para o filme Spider-Man
-            Spider-Verse, feito para divulgação do filme, e para informações
-            como sinopse, elenco, onde assistir e preço do streaming. E criei a
-            seção de wallpaper, para salvar aquela aquela aquela imagem legal do
-            filme.
-          </Paragrafo>
-          <ListButtons>
-            <li>
-              <Visit
-                href="https://spiderverse-leonardo-sibuya.vercel.app/"
-                target={'_blank'}
-              >
-                Visitar
-              </Visit>
-            </li>
-            <li>
-              <Code
-                href="https://github.com/LeonardoSibuya/spiderverse"
-                target={'_blank'}
-              >
-                Ver código
-              </Code>
-            </li>
-          </ListButtons>
-        </ItemProject>
+import Projects from '../../class'
 
-        <ItemProject>
-          <Subtitulo>Clone Disney Plus</Subtitulo>
-          <img src={CloneDisney} alt="" />
-          <Paragrafo>
-            Este projeto é um clone da Landing Page da Disney Plus, criado para
-            aprimorar minhas habilidades com HTML, CSS e JavaScript, onde foi
-            desenvolvido durante meu aprendizado no curso da EBAC, desta forma
-            acrescentou muito em meus conhecimentos e técnicas de
-            desenvolvimento.
-          </Paragrafo>
-          <ListButtons>
-            <li>
-              <Visit
-                href="https://ls-clone-disneyplus.vercel.app/"
-                target={'_blank'}
-              >
-                Visitar
-              </Visit>
-            </li>
-            <li>
-              <Code
-                href="https://github.com/LeonardoSibuya/clone_disneyplus"
-                target={'_blank'}
-              >
-                Ver código
-              </Code>
-            </li>
-          </ListButtons>
-        </ItemProject>
+const Mock: Projects[] = [
+  {
+    id: 1,
+    description:
+      'Projeto idealizado para simular uma plataforma de investimentos,onde teria planos de assinatura para o usuário. Utilizei API para mostrar ao usuário a cotação atual máxima e mínima do dólar em real, um FAQ de perguntas frequentes, e um formulário simulando uma Newsletter.',
+    image: Financy,
+    site: 'https://financy-one.vercel.app/',
+    title: 'FinancY',
+    code: 'https://github.com/LeonardoSibuya/financy'
+  },
+  {
+    id: 2,
+    description:
+      'E-commerce de jogos de video-game, onde simulamos toda interatividade do usuário, como adicionar e remover jogos do carrinho de compra, com o preço sendo atualizado automaticamente, e também galeria de imagens e videos feita com modal. Foi desenvolvido com React.js, TypeScirpt, consumo de Api AJAX e tests.',
+    image: ecommerce,
+    site: 'https://projeto-eplay.vercel.app/',
+    title: 'E-Play',
+    code: 'https://github.com/LeonardoSibuya/projeto-ebac-eplay'
+  },
+  {
+    id: 3,
+    description:
+      'Este projeto é um clone da Landing Page da Disney Plus, criado para aprimorar minhas habilidades com HTML, CSS e JavaScript, onde foi desenvolvido durante meu aprendizado no curso da EBAC, desta forma acrescentou muito em meus conhecimentos e técnicas de desenvolvimento.',
+    image: CloneDisney,
+    site: 'https://ls-clone-disneyplus.vercel.app/',
+    title: 'Clone Disney Plus',
+    code: 'https://github.com/LeonardoSibuya/clone_disneyplus'
+  },
+  {
+    id: 4,
+    description:
+      'Este projeto desenvolvido junto da EBAC, é uma lista To Do List. Foi programada utilizando React, TypeScript, Styled-components e Redux. Possui diversas funcionalidades excelentes para novos projetos e para o mercado de trabalho, e acrescentou muito em minhas habilidades técnicas e organizacional.',
+    image: lista,
+    site: 'https://minhas-tarefas-ebac.vercel.app/',
+    title: 'To Do List',
+    code: 'https://github.com/LeonardoSibuya/minhas-tarefas-Ebac'
+  }
+]
 
-        <ItemProject>
-          <Subtitulo>To Do List</Subtitulo>
-          <img src={lista} alt="" />
-          <Paragrafo>
-            Este projeto desenvolvido junto da EBAC, é uma lista To Do List. Foi
-            programada utilizando React, TypeScript, Styled-components e Redux.
-            Possui diversas funcionalidades excelentes para novos projetos e
-            para o mercado de trabalho, e acrescentou muito em minhas
-            habilidades técnicas e organizacional.
-          </Paragrafo>
-          <ListButtons>
-            <li>
-              <Visit
-                href="https://minhas-tarefas-ebac.vercel.app/"
-                target={'_blank'}
+interface ModalState extends Projects {
+  isVisible: boolean
+}
+
+const Projetos = () => {
+  const [descricaoVisivel, setDescricaoVisivel] = useState(false)
+
+  const [modal, setModal] = useState<ModalState>({
+    isVisible: false,
+    title: '',
+    image: '',
+    description: '',
+    site: '',
+    code: '',
+    id: 44
+  })
+
+  const closeModal = () => {
+    setModal({
+      isVisible: false,
+      title: '',
+      image: '',
+      description: '',
+      site: '',
+      code: '',
+      id: 44
+    })
+  }
+
+  return (
+    <>
+      <ContentProjects id="project">
+        <Container>
+          <Titulo>Projects</Titulo>
+          <Line />
+          <ListProjects>
+            {Mock.map((projeto) => (
+              <ItemProject
+                key={projeto.id}
+                onClick={() => {
+                  setModal({
+                    id: projeto.id,
+                    title: projeto.title,
+                    code: projeto.code,
+                    description: projeto.description,
+                    image: projeto.image,
+                    isVisible: true,
+                    site: projeto.site
+                  })
+                }}
               >
-                Visitar
-              </Visit>
-            </li>
-            <li>
-              <Code
-                href="https://github.com/LeonardoSibuya/minhas-tarefas-Ebac"
-                target={'_blank'}
-              >
-                Ver código
-              </Code>
-            </li>
-          </ListButtons>
-        </ItemProject>
-      </ListProjects>
-    </Container>
-  </ContentProjects>
-)
+                <Subtitulo>{projeto.title}</Subtitulo>
+                <img src={projeto.image} alt="" />
+                <Action>
+                  <img src={zoom} alt="" />
+                </Action>
+              </ItemProject>
+            ))}
+          </ListProjects>
+        </Container>
+      </ContentProjects>
+
+      <Modal className={modal.isVisible ? 'visible' : ''}>
+        <ModalContent>
+          <ImageClose src={fechar} alt="" onClick={closeModal} />
+          <ImgProject src={modal.image} alt="" />
+          <div>
+            <Subtitulo>{modal.title}</Subtitulo>
+            <Paragrafo>{modal.description}</Paragrafo>
+            <ListButtons>
+              <li>
+                <Visit href={modal.site} target={'_blank'}>
+                  Visitar
+                </Visit>
+              </li>
+              <li>
+                <Code href={modal.code} target={'_blank'}>
+                  Ver código
+                </Code>
+              </li>
+            </ListButtons>
+          </div>
+        </ModalContent>
+        <div className="overlay" onClick={closeModal}></div>
+      </Modal>
+    </>
+  )
+}
 
 export default Projetos
