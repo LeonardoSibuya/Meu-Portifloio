@@ -127,6 +127,12 @@ const Projetos = () => {
               </ItemProject>
             ))}
           </ListProjects>
+          <Visit
+            href="https://github.com/LeonardoSibuya?tab=repositories"
+            target={'_blank'}
+          >
+            Mais projetos +
+          </Visit>
         </Container>
       </ContentProjects>
 
