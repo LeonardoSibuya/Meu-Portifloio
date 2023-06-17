@@ -7,16 +7,25 @@ export const Visit = styled.a`
   font-weight: bold;
   font-size: 14px;
   background-color: #7b1111;
-  padding: 6px 0;
-  width: 120px;
+  padding: 6px;
+  max-width: 100%;
+  width: 240px;
   text-align: center;
   text-decoration: none;
   cursor: pointer;
   border-radius: 8px;
   transition: 0.5s ease;
-  margin-top: 16px;
-  display: inline-block;
+  display: block;
   letter-spacing: 1px;
+  margin: 24px auto 0;
+
+  @media (max-width: 1024px) {
+    margin-top: 32px;
+  }
+
+  @media (max-width: 768px) {
+    width: 160px;
+  }
 
   :hover {
     background-color: #b21717;
@@ -30,12 +39,6 @@ export const ContentProjects = styled.div`
     ${(props) => props.theme.corSecundaria}
   );
   padding: 80px 0;
-
-  ${Visit} {
-    width: 20%;
-    display: block;
-    margin: 24px auto 0;
-  }
 `
 
 export const ListProjects = styled.ul`
@@ -75,7 +78,15 @@ export const Action = styled.div`
   }
 
   @media (max-width: 1024px) {
-    display: none;
+    display: flex;
+    height: 95%;
+    top: 40px;
+  }
+
+  @media (max-width: 768px) {
+    display: flex;
+    height: 90%;
+    top: 38px;
   }
 `
 
@@ -109,7 +120,7 @@ export const ItemProject = styled.li`
       transition: opacity 0.5s ease;
 
       @media (max-width: 1024px) {
-        display: none;
+        display: flex;
       }
 
       img {
@@ -167,6 +178,12 @@ export const Modal = styled.div`
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.9);
+  }
+
+  ${Visit} {
+    max-width: 100%;
+    width: 120px;
+    margin-top: 16px;
   }
 `
 

@@ -73,8 +73,6 @@ interface ModalState extends Projects {
 }
 
 const Projetos = () => {
-  const [descricaoVisivel, setDescricaoVisivel] = useState(false)
-
   const [modal, setModal] = useState<ModalState>({
     isVisible: false,
     title: '',
