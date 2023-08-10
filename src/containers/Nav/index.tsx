@@ -39,7 +39,7 @@ const Nav = () => {
               <Link href="#contact">Contact</Link>
             </Item>
             <Item>
-              <LinkExterno href="tel:11974537646">Contact Me</LinkExterno>
+              <LinkExterno href="tel:11974537646">Call</LinkExterno>
             </Item>
           </ListaItensContent>
         </ListaItens>

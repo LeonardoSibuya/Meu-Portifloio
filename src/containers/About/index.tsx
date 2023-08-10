@@ -26,21 +26,19 @@ const About = () => (
           <Titulo>About Me</Titulo>
           <Line />
           <Paragrafo>
-            Olá, meu nome é Leonardo Sibuya, sou desenvolvedor front-end web.
-            Sou apaixonado por tecnologia, e decidi ingressar na área de
-            programação, com muito foco e comprometimento. Atualmente, estou em
-            busca de oportunidades para trabalhar em projetos desafiadores que
-            possam me ajudar a crescer e desenvolver ainda mais minhas
-            habilidades como desenvolvedor front-end. Estou animado para
-            compartilhar meu trabalho e colaborar com outros profissionais de
-            tecnologia.
+            Olá, meu nome é Leonardo Sibuya, sou desenvolvedor Full Stack. Sou
+            apaixonado por tecnologia, e decidi ingressar na área de
+            programação, com muito foco e comprometimento.
           </Paragrafo>
           <br />
           <Paragrafo>
-            Sou estudante de Desenvolvimento Full stack Python na EBAC - Escola
-            Britânica de Artes Criativas e Tecnologia, e tenho como objetivo
-            ingressar e crescer no mercado de programação, destaco minhas
-            qualidades como disciplina e foco para alcançar as minhas metas.
+            Estou em transição de carreira, com o objetivo em me tornar um
+            desenvolvedor Full Stack. Atualmente estudo na EBAC, onde desenvolvi
+            habilidades em Front-end e Back-end, com expertise em HTML, CSS,
+            JavaScript, TypeScript, React, Testes, integração de API, Django,
+            Python, Django-Rest-Framework, Docker, CI/CD, TDD e outros. Realizei
+            alguns projetos Freelance, com foco em Front-end, e estou em busca
+            de me qualificar cada vez mais e adquirir mais experiência.
           </Paragrafo>
           <br />
           <Paragrafo>
@@ -54,7 +52,7 @@ const About = () => (
               <b>Idade:</b> 23 anos
             </Item>
             <Item>
-              <b>Formação:</b> Full Stack Python - EBAC
+              <b>Formação:</b> Desenvolvedor Full Stack - EBAC
             </Item>
             <Item>
               <b>Cidade:</b> São José dos Campos/SP

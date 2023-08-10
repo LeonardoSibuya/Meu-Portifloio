@@ -7,9 +7,15 @@ export const Content = styled.div`
     ${(props) => props.theme.corSecundaria}
   );
   padding: 80px 0;
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+  }
 `
 
-export const Info = styled.div`
+export const Info = styled.li`
   display: flex;
   align-items: start;
   justify-content: center;
@@ -25,9 +31,9 @@ export const Info = styled.div`
   }
 
   img {
-    max-width: 460px;
+    max-width: 480px;
     border-radius: 8px;
-    height: 480px;
+    height: 400px;
     box-shadow: 1px 2px 4px 0px;
 
     @media (max-width: 1024px) {
