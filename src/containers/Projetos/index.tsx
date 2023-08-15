@@ -21,7 +21,7 @@ import {
 
 import Financy from '../../images/projects/financy.png'
 import ecommerce from '../../images/projects/Eplay.png'
-import CloneDisney from '../../images/projects/clone-disney.png'
+import efood from '../../images/projects/efood.png'
 import lista from '../../images/projects/todo-list.png'
 
 import fechar from '../../images/icons/fechar.png'
@@ -42,7 +42,7 @@ const Mock: Projects[] = [
   {
     id: 2,
     description:
-      'E-commerce de jogos de video-game, onde simulamos toda interatividade do usuário, como adicionar e remover jogos do carrinho de compra, com o preço sendo atualizado automaticamente, e também galeria de imagens e videos feita com modal. Foi desenvolvido com React.js, TypeScirpt, consumo de Api AJAX e tests.',
+      'E-commerce de jogos de video-game, onde simulamos toda interatividade do usuário, como adicionar e remover jogos do carrinho de compra, com o preço sendo atualizado automaticamente, e também galeria de imagens e videos feita com modal. Foi desenvolvido com React.js, TypeScirpt, consumo de Api, AJAX, Redux e tests.',
     image: ecommerce,
     site: 'https://projeto-eplay.vercel.app/',
     title: 'E-Play',
@@ -51,10 +51,10 @@ const Mock: Projects[] = [
   {
     id: 3,
     description:
-      'Este projeto é um clone da Landing Page da Disney Plus, criado para aprimorar minhas habilidades com HTML, CSS e JavaScript, onde foi desenvolvido durante meu aprendizado no curso da EBAC, desta forma acrescentou muito em meus conhecimentos e técnicas de desenvolvimento.',
-    image: CloneDisney,
+      'Projeto desenvolvido para conclusão do front-end do curso da EBAC, onde criei uma plataforma baseada no ifood, onde podemos selecionar os restaurantes por categorias, escolher o prato que queremos, e utilizando requisições de API, o cliente pode simular a compra e finalização de seu pedido, com método POST. Projeto desenvolvido com React.js, TypeScirpt, consumo de Api e Redux',
+    image: efood,
     site: 'https://ls-clone-disneyplus.vercel.app/',
-    title: 'Clone Disney Plus',
+    title: 'EFOOD',
     code: 'https://github.com/LeonardoSibuya/clone_disneyplus'
   },
   {

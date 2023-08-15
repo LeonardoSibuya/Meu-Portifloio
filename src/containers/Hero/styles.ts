@@ -41,26 +41,21 @@ export const DivBotao = styled.div`
 `
 
 export const Botao = styled.button`
-  background-color: ${(props) => props.theme.corSecundaria};
-  color: ${(props) => props.theme.corLetra};
-  border-radius: 6%;
-  padding: 6px;
-  width: 140px;
+  background-color: #6c6cf7;
+  border-radius: 50%;
+  padding: 8px;
+  width: 48px;
+  height: 48px;
+  text-align: center;
   border: none;
   cursor: pointer;
   transition: 0.5s ease;
-  display: flex;
-  align-itens: center;
-  justify-content: space-around;
-  font-weight: bold;
 
-  @media (max-width: 768px) {
-    padding: 6px;
-    width: 128px;
+  img {
+    max-width: 32px;
   }
 
   :hover {
     background-color: #9191f4;
-    letter-spacing: 1px;
   }
 `

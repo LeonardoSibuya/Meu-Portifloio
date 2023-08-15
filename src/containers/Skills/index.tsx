@@ -20,6 +20,7 @@ import react from '../../images/icons/react.svg'
 import vue from '../../images/icons/vuejs.svg'
 import jquery from '../../images/icons/jquery.svg'
 import styledc from '../../images/icons/sc.png'
+import django from '../../images/icons/django.png'
 
 //Other Tecnologies
 import Redux from '../../images/icons/redux.png'
@@ -35,6 +36,12 @@ import es from '../../images/icons/es6.png'
 import parcel from '../../images/icons/parcel.png'
 import ajax from '../../images/icons/ajax.jpg'
 import coding from '../../images/icons/coding.jpg'
+import rest from '../../images/icons/rest.png'
+import docker from '../../images/icons/docker.png'
+import cicd from '../../images/icons/cicd.png'
+import cypress from '../../images/icons/cypress.png'
+import mysql from '../../images/icons/mysql.png'
+import postgree from '../../images/icons/postgree.png'
 
 const Skill = () => (
   <Tecnologies id="skill">
@@ -53,6 +60,7 @@ const Skill = () => (
       <TecItens>
         <Pill bgColor={'8912FF'} image={bootstrap} child={'Bootstrap'}></Pill>
         <Pill bgColor={'2B2E34'} image={react} child={'React'}></Pill>
+        <Pill bgColor={'356994'} image={django} child={'Django'}></Pill>
         <Pill bgColor={'394B5D'} image={vue} child={'VueJS'}></Pill>
         <Pill bgColor={'33517F'} image={jquery} child={'JQuery'}></Pill>
         <Pill
@@ -64,6 +72,7 @@ const Skill = () => (
       <Subtitulo>Other Tecnologies</Subtitulo>
       <TecItens>
         <Pill bgColor={'bb96f7'} image={Redux} child={'Redux'}></Pill>
+        <Pill bgColor={'356994'} image={rest} child={'Django Rest'}></Pill>
         <Pill bgColor={'772222'} image={Gulp} child={'Gulp'}></Pill>
         <Pill bgColor={'0480CC'} image={Less} child={'Less'}></Pill>
         <Pill bgColor={'F56EB1'} image={sass} child={'SASS'}></Pill>
@@ -76,6 +85,11 @@ const Skill = () => (
         <Pill bgColor={'21374B'} image={parcel} child={'Parcel'}></Pill>
         <Pill bgColor={'126799'} image={ajax} child={'AJAX'}></Pill>
         <Pill bgColor={'2B2E34'} image={coding} child={'Tests'}></Pill>
+        <Pill bgColor={'21374B'} image={docker} child={'Docker'}></Pill>
+        <Pill bgColor={'2B2E34'} image={mysql} child={'MySQL'}></Pill>
+        <Pill bgColor={'657B88'} image={postgree} child={'PostgreSQL'}></Pill>
+        <Pill bgColor={'2B2E34'} image={cicd} child={'CI/CD'}></Pill>
+        <Pill bgColor={'af9d33'} image={cypress} child={'Cypress'}></Pill>
       </TecItens>
     </Container>
   </Tecnologies>
