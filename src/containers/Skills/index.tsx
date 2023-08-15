@@ -20,8 +20,6 @@ import react from '../../images/icons/react.svg'
 import vue from '../../images/icons/vuejs.svg'
 import jquery from '../../images/icons/jquery.svg'
 import styledc from '../../images/icons/sc.png'
-import django from '../../images/icons/django.png'
-import rest from '../../images/icons/rest.png'
 
 //Other Tecnologies
 import Redux from '../../images/icons/redux.png'
@@ -37,10 +35,6 @@ import es from '../../images/icons/es6.png'
 import parcel from '../../images/icons/parcel.png'
 import ajax from '../../images/icons/ajax.jpg'
 import coding from '../../images/icons/coding.jpg'
-import testing from '../../images/icons/testing-library.png'
-import ciCd from '../../images/icons/cicd.png'
-import sql from '../../images/icons/mysql.png'
-import docker from '../../images/icons/docker.png'
 
 const Skill = () => (
   <Tecnologies id="skill">
@@ -61,8 +55,6 @@ const Skill = () => (
         <Pill bgColor={'2B2E34'} image={react} child={'React'}></Pill>
         <Pill bgColor={'394B5D'} image={vue} child={'VueJS'}></Pill>
         <Pill bgColor={'33517F'} image={jquery} child={'JQuery'}></Pill>
-        <Pill bgColor={'33517F'} image={django} child={'Django'}></Pill>
-        <Pill bgColor={'DD4A1F'} image={rest} child={'Django Rest'}></Pill>
         <Pill
           bgColor={'CD6D8D'}
           image={styledc}
@@ -83,22 +75,7 @@ const Skill = () => (
         <Pill bgColor={'af9d33'} image={es} child={'ES6'}></Pill>
         <Pill bgColor={'21374B'} image={parcel} child={'Parcel'}></Pill>
         <Pill bgColor={'126799'} image={ajax} child={'AJAX'}></Pill>
-        <Pill
-          bgColor={'126799'}
-          image={testing}
-          child={'React testing library'}
-        ></Pill>
-        <Pill bgColor={'1C2F25'} image={ciCd} child={'CI/CD'}></Pill>
-        <Pill bgColor={'6B2E34'} image={sql} child={'MySQL'}></Pill>
-        <Pill bgColor={'21374B'} image={docker} child={'Docker'}></Pill>
-        <Pill
-          bgColor={'2B2E34'}
-          image={coding}
-          child={'Testes unitários'}
-        ></Pill>
-        <Pill bgColor={'2B2E34'} image={coding} child={'TDD'}></Pill>
-        <Pill bgColor={'2B2E34'} image={coding} child={'Poetry'}></Pill>
-        <Pill bgColor={'2B2E34'} image={coding} child={'Rest API'}></Pill>
+        <Pill bgColor={'2B2E34'} image={coding} child={'Tests'}></Pill>
       </TecItens>
     </Container>
   </Tecnologies>

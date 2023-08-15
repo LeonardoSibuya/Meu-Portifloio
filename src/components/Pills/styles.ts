@@ -9,7 +9,6 @@ export const Pilula = styled.div<PropsPill>`
   color: #fff;
   padding: 4px 0;
   font-size: 16px;
-  text-shadow: 0px 1px 3px #000;
   display: flex;
   align-items: center;
   justify-content: center;
