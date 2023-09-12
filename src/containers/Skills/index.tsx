@@ -13,6 +13,7 @@ import Css from '../../images/icons/css3.svg'
 import JS from '../../images/icons/javascript.svg'
 import TS from '../../images/icons/typescript.svg'
 import Py from '../../images/icons/python.svg'
+import node from '../../images/icons/node.png'
 
 //Frameworks & Libs
 import bootstrap from '../../images/icons/bootstrap.svg'
@@ -21,6 +22,7 @@ import vue from '../../images/icons/vuejs.svg'
 import jquery from '../../images/icons/jquery.svg'
 import styledc from '../../images/icons/sc.png'
 import django from '../../images/icons/django.png'
+import nest from '../../images/icons/nest.png'
 
 //Other Tecnologies
 import Redux from '../../images/icons/redux.png'
@@ -55,6 +57,7 @@ const Skill = () => (
         <Pill bgColor={'F7DF1E'} image={JS} child={'JavaScript'}></Pill>
         <Pill bgColor={'0C7AC4'} image={TS} child={'TypeScript'}></Pill>
         <Pill bgColor={'356994'} image={Py} child={'Python'}></Pill>
+        <Pill bgColor={'cebf4a'} image={node} child={'NodeJs'}></Pill>
       </TecItens>
       <Subtitulo>Frameworks & Libs</Subtitulo>
       <TecItens>
@@ -68,6 +71,7 @@ const Skill = () => (
           image={styledc}
           child={'Styled-Components'}
         ></Pill>
+        <Pill bgColor={'cebf4a'} image={nest} child={'NestJs'}></Pill>
       </TecItens>
       <Subtitulo>Other Tecnologies</Subtitulo>
       <TecItens>

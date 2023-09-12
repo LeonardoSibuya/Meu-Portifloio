@@ -1,5 +1,7 @@
 import { useState } from 'react'
+
 import Avatar from '../../components/Avatar'
+import Paragrafo from '../../components/Paragrafo'
 
 import sun from '../../images/icons/sun.png'
 import moon from '../../images/icons/moon.png'

@@ -26,24 +26,33 @@ const About = () => (
           <Titulo>About Me</Titulo>
           <Line />
           <Paragrafo>
-            Olá, meu nome é Leonardo Sibuya, estou em transição de carreira, com
-            o objetivo de ingressar na área de tecnologia, com foco em me tornar
-            um desenvolvedor Full Stack. Sou apaixonado por tecnologia desde
-            criança, e decidi ingressar na área de programação, com muito foco e
-            comprometimento.
+            Olá, eu sou o Leonardo Sibuya, e concluí minha transição de carreira
+            para desenvolvedor web.
           </Paragrafo>
           <br />
           <Paragrafo>
-            Atualmente estudo na EBAC, onde desenvolvi habilidades em Front-end
-            e Back-end, com expertise em HTML, CSS, JavaScript, TypeScript,
-            React, Testes, integração de APIs, Django, Python,
-            Django-Rest-Framework, Docker, CI/CD, TDD. Realizei alguns projetos
-            Freelance, com foco em Front-end, e estou em busca de me qualificar
-            cada vez mais e adquirir experiências.
+            Desde minha infância, meu interesse pela tecnologia tem sido uma
+            constante. Esse interesse me levou a tomar a decisão de ingressar na
+            programação, com grande determinação e compromisso. Em outubro de
+            2022, iniciei minha formação na EBAC, onde adquiri habilidades em
+            Front-end e Back-end, aprimorando-me em HTML, CSS, JavaScript,
+            TypeScript, React, Testes, integração de APIs, Django, Python,
+            Django-Rest-Framework, Docker, CI/CD e TDD.
           </Paragrafo>
           <br />
           <Paragrafo>
-            Obrigado por visitar o meu portfólio e por considerar meu trabalho!
+            Em agosto de 2023, conquistei minha primeira oportunidade como
+            desenvolvedor web júnior na empresa Six Comércio, o que marcou um
+            importante passo na minha trajetória profissional. Minha jornada de
+            aprendizado e aprimoramento não tem fim. Estou sempre em busca de
+            novos desafios e oportunidades para expandir meus conhecimentos na
+            área de tecnologia.
+          </Paragrafo>
+          <br />
+          <Paragrafo>
+            Agradeço por visitar meu portfólio e por considerar meu trabalho.
+            Estou comprometido em continuar minha evolução nesse empolgante
+            mundo de tecnologia.
           </Paragrafo>
           <Infos>
             <Item>
@@ -60,6 +69,9 @@ const About = () => (
             </Item>
             <Item>
               <b>Telefone:</b> (11) 97453-7646
+            </Item>
+            <Item>
+              <b>Trabalho atual:</b> Six Comérico
             </Item>
           </Infos>
           <ListSocial>

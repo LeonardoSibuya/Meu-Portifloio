@@ -21,7 +21,7 @@ import {
 
 import Financy from '../../images/projects/financy.png'
 import ecommerce from '../../images/projects/Eplay.png'
-import efood from '../../images/projects/efood.png'
+import blog from '../../images/projects/blogpost.png'
 import lista from '../../images/projects/todo-list.png'
 
 import fechar from '../../images/icons/fechar.png'
@@ -51,11 +51,11 @@ const Mock: Projects[] = [
   {
     id: 3,
     description:
-      'Projeto desenvolvido para conclusão do front-end do curso da EBAC, onde criei uma plataforma baseada no ifood, onde podemos selecionar os restaurantes por categorias, escolher o prato que queremos, e utilizando requisições de API, o cliente pode simular a compra e finalização de seu pedido, com método POST. Projeto desenvolvido com React.js, TypeScirpt, consumo de Api e Redux',
-    image: efood,
-    site: 'https://ls-clone-disneyplus.vercel.app/',
-    title: 'EFOOD',
-    code: 'https://github.com/LeonardoSibuya/clone_disneyplus'
+      'Projeto FullStack realizado para colocar em prática todos os conhecimentos que havia adquirido até o momento em Front-end e Back-end, para isso criei um Blogpost de tarefas, onde é possível realizar o CRUD completo dos posts. Para o desenvolvimento no front-end utilizei React com TypeScript, Styled-components e Redux, e para testar, utilizei cypress. No Back-end desenvolvi utilizando Django-rest-framework.',
+    image: blog,
+    site: 'https://blog-fullstack-one.vercel.app/',
+    title: 'My Blog',
+    code: 'https://github.com/LeonardoSibuya/blog-fullstack'
   },
   {
     id: 4,
