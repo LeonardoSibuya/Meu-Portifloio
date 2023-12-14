@@ -26,27 +26,25 @@ const About = () => (
           <Titulo>About Me</Titulo>
           <Line />
           <Paragrafo>
-            Olá, eu sou o Leonardo Sibuya, e concluí minha transição de carreira
-            para desenvolvedor web.
+            Olá, me chamo Leonardo Sibuya, e sou desenvoldor Full Stack.
           </Paragrafo>
           <br />
           <Paragrafo>
-            Desde minha infância, meu interesse pela tecnologia tem sido uma
-            constante. Esse interesse me levou a tomar a decisão de ingressar na
-            programação, com grande determinação e compromisso. Em outubro de
-            2022, iniciei minha formação na EBAC, onde adquiri habilidades em
-            Front-end e Back-end, aprimorando-me em HTML, CSS, JavaScript,
-            TypeScript, React, Testes, integração de APIs, Django, Python,
-            Django-Rest-Framework, Docker, CI/CD e TDD.
+            minha paixão pela tecnologia vem desde a minha infância. Essa paixão
+            me motivou a ingressar na programação, com muita dedicação. Em 2022,
+            dei início à minha jornada na EBAC, onde desenvolvi habilidades
+            sólidas em Front-end e Back-end, me aprimorando em HTML, CSS,
+            JavaScript, TypeScript, React, VueJs, Testes, integração de APIs,
+            Django, Python, Django-Rest-Framework, Docker, NodeJs, NestJs, CI/CD
+            e TDD.
           </Paragrafo>
           <br />
           <Paragrafo>
-            Em agosto de 2023, conquistei minha primeira oportunidade como
-            desenvolvedor web júnior na empresa Six Comércio, o que marcou um
-            importante passo na minha trajetória profissional. Minha jornada de
-            aprendizado e aprimoramento não tem fim. Estou sempre em busca de
-            novos desafios e oportunidades para expandir meus conhecimentos na
-            área de tecnologia.
+            Em 2023, conclui minha transição de carreira como desenvolvedor Full
+            Stack na Six Comércio, o que marcou um grande avanço na minha
+            carreira. Minha busca por conhecimento na área de tecnologia é
+            constante, e estou sempre animado para enfrentar novos desafios e
+            oportunidades de aprendizado.
           </Paragrafo>
           <br />
           <Paragrafo>

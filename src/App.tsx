@@ -13,6 +13,7 @@ import Skill from './containers/Skills'
 import EstiloGlobal from './style'
 import temaDark from './themes/dark'
 import temaLight from './themes/light'
+import Jobs from './containers/Jobs'
 
 function App() {
   const [estaUsandoTemaLight, setEstaUsandoTemaLight] = useState(false)
@@ -29,6 +30,7 @@ function App() {
       <main>
         <About />
         <Skill />
+        <Jobs />
         <Experience />
         <Projetos />
         <Contact />

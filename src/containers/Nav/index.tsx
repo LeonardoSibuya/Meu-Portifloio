@@ -30,6 +30,9 @@ const Nav = () => {
               <Link href="#skill">Skills</Link>
             </Item>
             <Item>
+              <Link href="#jobs">Jobs</Link>
+            </Item>
+            <Item>
               <Link href="#experience">Experience</Link>
             </Item>
             <Item>
