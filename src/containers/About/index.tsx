@@ -34,9 +34,8 @@ const About = () => (
             me motivou a ingressar na programação, com muita dedicação. Em 2022,
             dei início à minha jornada na EBAC, onde desenvolvi habilidades
             sólidas em Front-end e Back-end, me aprimorando em HTML, CSS,
-            JavaScript, TypeScript, React, VueJs, Testes, integração de APIs,
-            Django, Python, Django-Rest-Framework, Docker, NodeJs, NestJs, CI/CD
-            e TDD.
+            JavaScript, TypeScript, ReactJs, VueJs, Testes, integração de APIs,
+            Django, Python, Docker, NodeJs, NestJs, NextJs.
           </Paragrafo>
           <br />
           <Paragrafo>
@@ -60,7 +59,8 @@ const About = () => (
               <b>Idade:</b> 23 anos
             </Item>
             <Item>
-              <b>Formação:</b> Full Stack - EBAC
+              <b>Formação:</b> Análise e Desenvolvimento de Sistemas -
+              UniCesumar
             </Item>
             <Item>
               <b>Cidade:</b> São José dos Campos/SP
@@ -69,7 +69,7 @@ const About = () => (
               <b>Telefone:</b> (11) 97453-7646
             </Item>
             <Item>
-              <b>Trabalho atual:</b> Six Comérico
+              <b>Curso:</b> Full Stack - EBAC
             </Item>
           </Infos>
           <ListSocial>

@@ -23,6 +23,7 @@ import jquery from '../../images/icons/jquery.svg'
 import styledc from '../../images/icons/sc.png'
 import django from '../../images/icons/django.png'
 import nest from '../../images/icons/nest.png'
+import next from '../../images/icons/next.png'
 
 //Other Tecnologies
 import Redux from '../../images/icons/redux.png'
@@ -65,6 +66,7 @@ const Skill = () => (
         <Pill bgColor={'2B2E34'} image={react} child={'React'}></Pill>
         <Pill bgColor={'356994'} image={django} child={'Django'}></Pill>
         <Pill bgColor={'394B5D'} image={vue} child={'VueJS'}></Pill>
+        <Pill bgColor={'394B5D'} image={next} child={'NextJs'}></Pill>
         <Pill bgColor={'33517F'} image={jquery} child={'JQuery'}></Pill>
         <Pill
           bgColor={'CD6D8D'}
