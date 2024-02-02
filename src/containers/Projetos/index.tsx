@@ -4,22 +4,12 @@ import Titulo from '../../components/Title'
 import Subtitulo from '../../components/Subtitle'
 import Paragrafo from '../../components/Paragrafo'
 import Line from '../../components/Line'
-import { Container } from '../../style'
-import {
-  Code,
-  ContentProjects,
-  ItemProject,
-  ListButtons,
-  ListProjects,
-  Visit,
-  Modal,
-  ModalContent,
-  ImageClose,
-  ImgProject,
-  Action
-} from './styles'
 
-import Financy from '../../images/projects/financy.png'
+import { Container } from '../../style'
+
+import * as S from './styles'
+
+import Notas from '../../images/projects/notas-bimestrais.png'
 import ecommerce from '../../images/projects/Eplay.png'
 import blog from '../../images/projects/blogpost.png'
 import lista from '../../images/projects/todo-list.png'
@@ -33,11 +23,11 @@ const Mock: Projects[] = [
   {
     id: 1,
     description:
-      'Projeto idealizado para simular uma plataforma de investimentos,onde teria planos de assinatura para o usuário. Utilizei API para mostrar ao usuário a cotação atual máxima e mínima do dólar em real, um FAQ de perguntas frequentes, e um formulário simulando uma Newsletter.',
-    image: Financy,
-    site: 'https://financy-one.vercel.app/',
-    title: 'FinancY',
-    code: 'https://github.com/LeonardoSibuya/financy'
+      'Projeto criado a partir de um teste técnico, o projeto consiste em desenvolver uma plataforma que permite a um professor registrar as notas de cada bimestre de um aluno específico, variando de 0 a 10, inclusive números decimais. Recebi as instruções detalhadas para este projeto, que incluíam a reprodução exata do design elaborado no Figma no front-end, assim como a implementação das instruções para o desenvolvimento do back-end. O front-end deveria ser desenvolvido com ReactJs e o back-end com NodeJs, e ambos utilizando TypeScript. O front-end deveria conter quatro matérias em cada bimestre, cada uma identificada por uma cor única, e com a possibilidade de excluir e adicionar as matérias, além de atualizar as notas individualmente. As notas são visualmente representadas por cores, indicando vermelho, amarelo ou verde conforme o desempenho. Utilizei também styled-components no front-end, e fastify no back-end.',
+    image: Notas,
+    site: 'https://www.linkedin.com/feed/update/urn:li:activity:7157772959502241795/',
+    title: 'Teste técnico - Plataforma de Notas',
+    code: 'https://github.com/LeonardoSibuya/teste-tecnico-frontend'
   },
   {
     id: 2,
@@ -97,13 +87,13 @@ const Projetos = () => {
 
   return (
     <>
-      <ContentProjects id="project">
+      <S.ContentProjects id="project">
         <Container>
           <Titulo>Projects</Titulo>
           <Line />
-          <ListProjects>
+          <S.ListProjects>
             {Mock.map((projeto) => (
-              <ItemProject
+              <S.ItemProject
                 key={projeto.id}
                 onClick={() => {
                   setModal({
@@ -119,44 +109,44 @@ const Projetos = () => {
               >
                 <Subtitulo>{projeto.title}</Subtitulo>
                 <img src={projeto.image} alt="" />
-                <Action>
+                <S.Action>
                   <img src={zoom} alt="" />
-                </Action>
-              </ItemProject>
+                </S.Action>
+              </S.ItemProject>
             ))}
-          </ListProjects>
-          <Visit
+          </S.ListProjects>
+          <S.Visit
             href="https://github.com/LeonardoSibuya?tab=repositories"
             target={'_blank'}
           >
             Mais projetos +
-          </Visit>
+          </S.Visit>
         </Container>
-      </ContentProjects>
+      </S.ContentProjects>
 
-      <Modal className={modal.isVisible ? 'visible' : ''}>
-        <ModalContent>
-          <ImageClose src={fechar} alt="" onClick={closeModal} />
-          <ImgProject src={modal.image} alt="" />
+      <S.Modal className={modal.isVisible ? 'visible' : ''}>
+        <S.ModalContent>
+          <S.ImageClose src={fechar} alt="" onClick={closeModal} />
+          <S.ImgProject src={modal.image} alt="" />
           <div>
             <Subtitulo>{modal.title}</Subtitulo>
             <Paragrafo>{modal.description}</Paragrafo>
-            <ListButtons>
+            <S.ListButtons>
               <li>
-                <Visit href={modal.site} target={'_blank'}>
+                <S.Visit href={modal.site} target={'_blank'}>
                   Visitar
-                </Visit>
+                </S.Visit>
               </li>
               <li>
-                <Code href={modal.code} target={'_blank'}>
+                <S.Code href={modal.code} target={'_blank'}>
                   Ver código
-                </Code>
+                </S.Code>
               </li>
-            </ListButtons>
+            </S.ListButtons>
           </div>
-        </ModalContent>
+        </S.ModalContent>
         <div className="overlay" onClick={closeModal}></div>
-      </Modal>
+      </S.Modal>
     </>
   )
 }
