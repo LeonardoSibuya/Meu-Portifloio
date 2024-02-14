@@ -25,25 +25,24 @@ const About = () => (
         <div>
           <Titulo>About Me</Titulo>
           <Line />
+          <Paragrafo>Olá, me chamo Leonardo Sibuya.</Paragrafo>
+          <br />
           <Paragrafo>
-            Olá, me chamo Leonardo Sibuya, e sou desenvoldor Full Stack.
+            Sou um desenvolvedor Full Stack com 2 anos de experiência,
+            atualmente cursando Análise e Desenvolvimento de Sistemas na
+            Unicesumar. Completei o curso de Desenvolvedor Full Stack na EBAC e
+            possuo habilidades em HTML, CSS, JavaScript, TypeScript, ReactJs,
+            VueJs, NextJs, Python, Django, NodeJS, NestJs e Testes.
           </Paragrafo>
           <br />
           <Paragrafo>
-            minha paixão pela tecnologia vem desde a minha infância. Essa paixão
-            me motivou a ingressar na programação, com muita dedicação. Em 2022,
-            dei início à minha jornada na EBAC, onde desenvolvi habilidades
-            sólidas em Front-end e Back-end, me aprimorando em HTML, CSS,
-            JavaScript, TypeScript, ReactJs, VueJs, Testes, integração de APIs,
-            Django, Python, Docker, NodeJs, NestJs, NextJs.
-          </Paragrafo>
-          <br />
-          <Paragrafo>
-            Em 2023, conclui minha transição de carreira como desenvolvedor Full
-            Stack na Six Comércio, o que marcou um grande avanço na minha
-            carreira. Minha busca por conhecimento na área de tecnologia é
-            constante, e estou sempre animado para enfrentar novos desafios e
-            oportunidades de aprendizado.
+            Na minha última experiência como Desenvolvedor Full Stack na empresa
+            Six Comércio, fui responsável pela criação de Landing Pages,
+            manutenção de Softwares existentes, integração de API entre
+            Front-end e Back-end, além de oferecer suporte aos desenvolvedores
+            Plenos/Senior. Implementei melhorias nos códigos utilizando React
+            com TypeScript, proporcionando facilidades para futuras
+            funcionalidades e manutenções.
           </Paragrafo>
           <br />
           <Paragrafo>
